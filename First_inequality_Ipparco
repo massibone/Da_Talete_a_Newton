@@ -1,0 +1,6 @@
+il rapporto tra l'area del quadrato (a+b)^2 e l'area del rettangolo 4ab aumenta rapidamente man mano che  diventano più grandi. 
+In particolare il rapporto diventa sempre più grande di 1, confermando la verità della prima disuguaglianza di Ipparco.
+La prima disuguaglianza di Ipparco afferma che, dati due numeri reali positivi, A e B la seguente disuguaglianza vale:
+(a+b)**2 > 4ab
+La prima disuguaglianza segue dal fatto che a^2 e b^2 sono entrambi positivi, quindi a^2 + 2ab + b^2 è sicuramente maggiore di 2ab. 
+La seconda disuguaglianza segue semplicemente dalla somma di 2ab con sé stesso.
