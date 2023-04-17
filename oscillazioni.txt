@@ -1,0 +1,12 @@
+Le oscillazioni angolari, o librarsi in longitudine, sono un fenomeno che si verifica nei pianeti superiori (Giove, Saturno, Urano e Nettuno) a causa dell'effetto combinato del movimento di rivoluzione del pianeta attorno al Sole e del movimento di rotazione del pianeta su se stesso.
+
+In pratica, quando osserviamo un pianeta superiore dalla Terra, vediamo il suo movimento in longitudine (ovvero la sua posizione rispetto alle stelle di sfondo) oscillare avanti e indietro rispetto alla posizione che avrebbe se il suo moto fosse uniforme. Questa oscillazione è dovuta al fatto che, mentre il pianeta si muove nella sua orbita, l'osservatore sulla Terra si muove anche lui nella sua orbita attorno al Sole.
+
+Per visualizzare le oscillazioni angolari dei pianeti superiori, possiamo utilizzare un grafico della loro posizione in longitudine in funzione del tempo. Di seguito troverai un esempio di programma Python che calcola e visualizza le oscillazioni angolari di Giove per un intervallo di tempo specificato.
+possiamo comunque creare un esempio di oscillazioni angolari utilizzando una funzione matematica che approssima il movimento del pianeta.
+
+In questo esempio, utilizzeremo la seguente funzione matematica per descrivere il movimento di un pianeta immaginario:
+
+
+θ = A sin(ωt) + B sin(2ωt)
+dove θ rappresenta l'angolo del pianeta rispetto ad una posizione di riferimento, A e B sono coefficienti che determinano l'ampiezza delle oscillazioni, ω è una frequenza costante e t rappresenta il tempo.
