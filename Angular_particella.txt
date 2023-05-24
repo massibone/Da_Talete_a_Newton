@@ -1,0 +1,13 @@
+'''
+In questo esempio, consideriamo una particella che si muove lungo una traiettoria circolare. 
+La posizione angolare della particella rispetto ad una posizione di riferimento può essere descritta dalla seguente funzione matematica:
+
+scss
+θ = A sin(ωt)
+dove θ rappresenta l'angolo della particella rispetto ad una posizione di riferimento, 
+A è l'ampiezza dell'oscillazione, ω è la frequenza angolare costante e t rappresenta il tempo.
+
+Esempio di programma Python che calcola e visualizza le oscillazioni angolari di una particella utilizzando questa funzione matematica.
+
+
+'''
