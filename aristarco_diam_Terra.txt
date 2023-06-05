@@ -1,0 +1,76 @@
+Aristarco non aveva a disposizione le moderne tecniche di misurazione che ci permettono di conoscere con precisione il diametro della Terra e della Luna in chilometri. Tuttavia, possiamo ancora dimostrare che il diametro della Terra è circa tre volte quello della Luna utilizzando la parallasse.
+
+La parallasse è l'effetto apparente che si verifica quando si osserva un oggetto da due punti di vista diversi. Aristarco osservò la Luna durante un'eclissi di Sole e notò che la Terra proiettava un'ombra circolare sulla Luna. Se Aristarco avesse potuto osservare la Luna da un punto di vista diverso, ad esempio da un'orbita intorno al Sole, l'ombra sulla Luna sarebbe stata diversa.
+
+Utilizzando la parallasse, Aristarco fu in grado di stimare la distanza Terra-Luna in termini di diametri terrestri. Se sappiamo che la distanza media Terra-Luna è di circa 384.400 chilometri, possiamo utilizzare questa stima per calcolare il diametro della Luna in termini di diametri terrestri. Una volta calcolato il diametro della Luna, possiamo facilmente dimostrare che il diametro della Terra è circa tre volte quello della Luna.
+Codice Python
+
+
+---------------------
+# Costanti
+DISTANZA_TERRA_LUNA = 384400 # km
+PARALLASSE_ECLISSI = 0.5 # gradi
+
+# Calcola l'angolo di parallasse in radianti
+angolo_parallasse = math.radians(PARALLASSE_ECLISSI)
+
+# Calcola la distanza Terra-Luna in termini di diametri terrestri
+distanza_diametri_terrestri = DISTANZA_TERRA_LUNA / DIAMETRO_TERRA
+
+# Calcola il diametro della Luna in termini di diametri terrestri
+diametro_luna_diametri_terrestri = 2 * math.atan((DIAMETRO_LUNA / 2) / DISTANZA_TERRA_LUNA) / angolo_parallasse
+
+# Calcola il diametro della Terra in termini di diametri lunari
+diametro_terra_diametri_lunari = diametro_luna_diametri_terrestri / 3
+
+# Stampa i risultati
+print("Il diametro della Luna è di circa", round(diametro_luna_diametri_terrestri, 2), "diametri terrestri")
+print("Il diametro della Terra è di circa", round(diametro_terra_diametri_lunari, 2), "diametri lunari")
+-------------------------------------
+PARALLASSE_ECLISSI di 0.5 gradi per esempio, che potrebbe essere diverso dalla parallasse che Aristarco effettivamente misurò. Inoltre, la stima del diametro della Terra basata su questo metodo sarebbe stata molto approssimativa, ma sarebbe stata sufficiente per dimostrare che il diametro della Terra è circa tre volte quello della Luna.
+
+
+utilizzando solo concetti matematici e senza fare affidamento su misure moderne delle dimensioni degli oggetti.
+assumiamo che la distanza tra la Terra e la Luna sia di 30 volte il diametro della Terra, quindi la distanza effettiva è 31 volte il diametro della Terra (la distanza reale varia leggermente a causa delle orbite ellittiche della Terra e della Luna, ma possiamo trascurare questo dettaglio per scopi dimostrativi). Utilizzando le proporzioni, possiamo calcolare il rapporto tra i diametri come la somma della distanza Terra-Luna e del diametro della Terra, diviso per il diametro della Luna. Questo ci dà un rapporto di circa 1.5 + 1 = 2.5, quindi il diametro della Terra è circa 2.5 volte quello della Luna.
+
+che la distanza tra la Terra e la Luna sia di circa 30 volte il diametro della Terra (questa è una stima grossolana ma sufficientemente accurata per dimostrare il punto), e quindi dimostrare che il diametro della Terra è circa tre volte quello della Luna.
+
+Ecco un possibile codice Python che utilizza questo approccio:
+# Costanti
+DISTANZA_TERRA_LUNA = 30 # volte il diametro della Terra
+
+# Calcola il rapporto tra i diametri utilizzando proporzioni
+rapporto_diametri = (DISTANZA_TERRA_LUNA + 1) / 2
+
+# Stampa il rapporto tra i diametri
+print("Il diametro della Terra è circa", round(rapporto_diametri), "volte quello della Luna.")
+RAPPRESENTAZIONE CON Python
+import vpython as vp
+
+# Costanti
+RAGGIO_TERRA = 1 # unità arbitrarie
+RAGGIO_LUNA = RAGGIO_TERRA / 3 # diametro della Luna = 1/3 del diametro della Terra
+
+# Crea la sfera per la Terra
+terra = vp.sphere(pos=vp.vec(0, 0, 0), radius=RAGGIO_TERRA, color=vp.color.blue)
+
+# Crea la sfera per la Luna
+distanza_terra_luna = 4 * RAGGIO_TERRA # Distanza arbitraria tra Terra e Luna
+luna = vp.sphere(pos=vp.vec(distanza_terra_luna, 0, 0), radius=RAGGIO_LUNA, color=vp.color.gray(0.7))
+
+# Imposta il punto di vista e la scala dell'asse x
+vp.scene.camera.pos = vp.vec(8*RAGGIO_TERRA, 0, 0)
+vp.scene.camera.axis = -vp.scene.camera.pos
+vp.scene.autoscale = False
+vp.scene.range = 10 * RAGGIO_TERRA
+
+# Visualizza il risultato
+vp.scene.waitfor('click') # attende il click del mouse per chiudere la finestra
+
+----------------------
+In questo codice, utilizziamo la libreria VPython per creare due sfere che rappresentano la Terra e la Luna. Il raggio della Terra è impostato su 1 unità arbitraria, mentre il raggio della Luna è impostato sulla terza parte di quello della Terra, in base all'assunzione che il diametro della Terra sia circa tre volte quello della Luna.
+
+Successivamente, posizioniamo la Terra in posizione centrale (in (0,0,0)), mentre la Luna viene posizionata a una distanza arbitraria dalla Terra (4 volte il raggio della Terra). Infine, impostiamo la posizione della telecamera in modo da poter vedere entrambi gli oggetti e visualizziamo il risultato.
+
+Naturalmente, questa rappresentazione è molto grossolana e non rappresenta le dimensioni reali della Terra e della Luna in modo accurato. Tuttavia, può aiutare a visualizzare le proporzioni relative tra i due oggetti e dimostrare che il diametro della Terra è circa tre volte quello della Luna
+
